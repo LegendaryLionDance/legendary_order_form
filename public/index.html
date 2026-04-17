@@ -31,10 +31,10 @@
         .remove-btn { position: absolute; top: 10px; right: 10px; background: transparent; color: #ff4444; border: none; font-size: 12px; cursor: pointer; font-weight: bold; }
         .remove-btn:hover { text-decoration: underline; }
 
-        /* 新增 Size Chart 樣式 */
-        .size-chart-container { text-align: center; margin-bottom: 30px; }
-        .size-chart-container img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #333; }
-        .size-chart-title { font-size: 12px; font-weight: bold; color: #ccc; letter-spacing: 1px; margin-bottom: 10px; }
+        /* 圖片展示區樣式 (Styles & Size Chart) */
+        .image-showcase-container { text-align: center; margin-bottom: 30px; }
+        .image-showcase-container img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #333; }
+        .image-showcase-title { font-size: 12px; font-weight: bold; color: #ccc; letter-spacing: 1px; margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -49,10 +49,16 @@
         <!-- 價錢牌 -->
         <div class="price-box" id="priceDisplay"></div>
 
-        <!-- Size Chart (新增) -->
-        <div class="size-chart-container">
-            <div class="size-chart-title">SIZE CHART / 尺寸表</div>
-            <img src="chart.JPG" alt="Size Chart">
+        <!-- 款式展示 (新增) -->
+        <div class="image-showcase-container">
+            <div class="image-showcase-title">STYLES / 款式</div>
+            <img src="style.png" alt="Shirt Styles">
+        </div>
+
+        <!-- Size Chart -->
+        <div class="image-showcase-container">
+            <div class="image-showcase-title">SIZE CHART / 尺寸表</div>
+            <img src="chart.jpg" alt="Size Chart">
         </div>
 
         <form id="orderForm">
@@ -189,8 +195,8 @@
                     <label>PRODUCT / 款式</label>
                     <select class="item-product" required>
                         <option value="">Select Style / 選擇款式</option>
-                        <option value="Style A - W(R)E-Start Graphic Tee">Style A / 款式A </option>
-                        <option value="Style B - W(R)E-Start Graphic Tee">Style B / 款式B </option>
+                        <option value="Style A - W(R)E-Start Graphic Tee">Style A / 款式A (前印)</option>
+                        <option value="Style B - W(R)E-Start Graphic Tee">Style B / 款式B (後印)</option>
                     </select>
                 </div>
                 <div class="row">
